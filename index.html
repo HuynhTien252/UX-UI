@@ -3,66 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/Ex2/style.css">
+    <title>Ex1</title>
+    <link rel="stylesheet" href="/Ex1/style.css">
 </head>
 <body>
-    <footer>
-        <section>
+    <section>
+        <h2>National Sales Report</h2>
+        <table>
             <header>
-                <h2>PRODUCTS</h2>
+                <th>REGION</th>
+                <th>MANAGER</th>
+                <th class="column-3">SALES</th>
             </header>
-            <div>
-                <ul>
-                    <li><a href="#">Website Hosting</a></li>
-                    <li><a href="#">Free Automated</a></li>
-                    <li><a href="#">Wordpress</a></li>
-                    <li><a href="#">Migration</a></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <header>
-                <h2>COMPANY</h2>
-            </header>
-            <div>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Affiliates</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <header>
-                <h2>SUPPORT</h2>
-            </header>
-            <div>
-                <ul>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <header>
-                <h2>DOMAINS</h2>
-            </header>
-            <div>
-                <ul>
-                    <li><a href="#">Domain Checker</a></li>
-                    <li><a href="#">Domain Transfer</a></li>
-                    <li><a href="#">Free Domain</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="section-5th">
-            <div class="logo">
-                <img src="/Ex2/1.png" alt="Logo VTC Academy">
-                <p>Copyright 2025 VTC <br> Academy</p>
-            </div>
-        </section>
-    </footer>
+            <tr id="row-1" class="low">
+                <td>North</td>
+                <td>Alice</td>
+                <td class="column-3">$4,500</td>
+            </tr>
+            <tr id="row-2" class="high">
+                <!-- Lưu ý pseudo- element không thể gắn trực tiếp ở ngoài td hay talbe được ,vừa nó sẽ tự tộng thêm một cột ảo trong bảng đó  -->
+                <td><span class="pseudo-element">South</span></td>
+                <td>Bob</td>  
+                <td class="column-3">$12,000</td>
+            </tr>
+            <tr id="row-3">
+                <td>East</td>
+                <td>Charlie</td>
+                <td class="column-3">$8,000</td>
+            </tr>
+            <tr id="row-4" class="high">
+                <td><span class="pseudo-element">West</span></td>
+                <td>Dana</td>
+                <td class="column-3">$15,000</td>
+            </tr>
+            <tr id="row-5" class="low">
+                <td>Central</td>
+                <td>Eve</td>
+                <td class="column-3">$3,000</td>
+            </tr>
+            <tr id="row-6">
+                <td id="total">Total</td>
+                <td></td>
+                <td class="column-3">$42,500</td>
+            </tr>
+        </table>
+    </section>
 </body>
 </html>
